@@ -1,0 +1,107 @@
+/* Importando a fonte utilizada no projeto */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+/* Setando algumas informações para o projeto todo, como a fonte importada anteriormente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxanium', cursive;
+}
+
+/* Definindo o corpo do projeto como o background e alinhado elementos */
+body {
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
+}
+
+/* Essa tag é para colocar nossa pokedex e deixando responsiva */
+main {
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
+}
+
+/* Definindo os tamanhos da pokedex */
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
+/* Definindo os posicionamentos e os tamanhos dos pokemons */
+.pokemon__image {
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 18%;
+}
+
+/* Div pai para colocar as informações dos pokemons */
+.pokemon__data {
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54.5%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
+}
+
+/* Nome do pokemon */
+.pokemon__name {
+  color: #3a444d;
+  text-transform: capitalize;
+}
+
+/* Formulário para pesquisar pokemons */
+.form {
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
+}
+
+/* Estilização do input de pesquisa */
+.input__search {
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
+}
+
+/* Posicionamento dos botões */
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilização dos botões */
+.button {
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+/* Animação para a ativação do botão */
+.button:active {
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
+}
